@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Hotel Varda</title>
+
+    <!--favicon-->
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+
+
+
+</head>
+<body>
+    <nav>
+        <h1>
+            <!--index html significa que cuando en la pagina toco el logo, vuelvo al inicio-->
+            <a href="#">
+                <!--datos del logo-->
+                <img src="images/logo-hotel.jpg" width="200" alt="logo_hotel_varda">
+            </a>
+       
+
+        </h1>
+        <!--Menu de Navegacion-->
+
+        <ul>
+            <li><a href="hotel.html">Sobre Nosotros</a></li>
+            <li><a href="#habitaciones">Habitaciones</a></li>
+            <li><a href="#gastronomia">Gastronomia</a></li>
+            <li><a href="#promociones">Promociones</a></li>
+            <li><a href="#contactos">Contactos</a></li>
+        </ul>
+        <!--idiomas-->
+        <div>
+            <a href=""><img src="images/esp.png" width="35" alt="idioma español"></a>
+            <a href=""><img src="images/ing.png" width="30" alt="idioma ingles"></a>
+        </div>
+
+
+
+    </nav>
+
+    
+    <header>
+        <!-- Aca estara el slider con bxslider-->
+        <div class="bxslider">
+            <div><img src="images/hotel(5).jpg" width="1000" alt="recepcion_hotel" title="Funky roots"></div>
+            <!--div><img src="/assets/images/coffee2.jpg" title="The long and winding road"></div>
+            <div><img src="/assets/images/coffee3.jpg" title="Happy trees"></div-->
+        </div>
+
+
+
+
+        <!--div id="slider">
+            <img src="images/hotel(5).jpg" width="1000" alt="recepcion_hotel">
+            <img src="images/hotel(1).jpg" alt="desayuno_hotel">
+            <img src="images/hotel(4).jpg" alt="cafeteria_hotel">
+            <img src="images/hotel(6).jpg" alt="sauna_hotel">
+            <img src="images/hotel(9).jpg" alt="cafeteria_hotel">
+            
+        </div-->
+
+        <!--RESEÑA DEL HOTEL-->
+        <p>El hotel es un moderno hotel ubicado a solo 4 cuadras del centro de la ciudad de Mendoza. Un nuevo concepto en Hotelería diseñado especialmente para el confort del visitante. Hecho a medida para los viajeros más exigentes que quieren disfrutar de todo el encanto de Mendoza. Una propuesta para combinar naturaleza, descanso y relax.</p>
+        
+        <!--agregar un boton que me permita ir al hotel.html-->
+        
+        <br>
+        <br>
+         
+
+    </header>
+
+
+    <main>
+
+        <!--seccion habitaciones-->
+        <section id="habitaciones"></section>
+            <h2>Habitaciones</h2>
+            
+            <a href="#">volver al Menu</a>
+            <article>
+            
+                <p>El Hotel Posee 22 Habitaciones muy confortables con baño privado y pisos flotantes.
+                Contamos con habitaciones especiales para Familias con niños y personas con alguna discapacidad física.
+                TV por cable, aire acondicionado, calefacción, DDI, DDN, WIFI, caja fuerte, y servicio de lavandería. Todas cuentan con TV led de 32".
+                </p>
+                <br>
+        
+                <h3>Standard Room</h3>
+
+                    <div class="bxslider">
+                        <div><img src="images/Habitaciones(1).jpg" width="400" alt="tipo_de_habitacion" title="Funky roots"></div>
+                        <!--div><img src="/assets/images/coffee2.jpg" title="The long and winding road"></div>
+                        <div><img src="/assets/images/coffee3.jpg" title="Happy trees"></div-->
+                    </div>
+
+
+                    <!--div id="slider">
+                        <img src="images/Habitaciones(1).jpg" width="400" alt="tipo_de_habitacion">
+                        <img src="images/Habitaciones(2).jpg" alt="tipo_de_habitacion">
+                        <img src="images/Habitaciones(3).jpg" alt="tipo_de_habitacion">
+                        <img src="images/Habitaciones(4).jpg" alt="tipo_de_habitacion">
+                                        
+                    </div-->
+
+                    <!--FALTA-->
+                    <!--boton de cotizar -->
+                    
+                <br>    
+
+                <h3>Superior Room</h3>
+
+                    <div class="bxslider">
+                        <div><img src="images/Habitaciones(8).jpg" width="400" alt="tipo_de_habitacion" title="Funky roots"></div>
+                        <!--div><img src="/assets/images/coffee2.jpg" title="The long and winding road"></div>
+                        <div><img src="/assets/images/coffee3.jpg" title="Happy trees"></div-->
+                    </div>
+
+
+
+                    <!--div id="slider">
+                        <img src="images/Habitaciones(8).jpg" width="400" alt="tipo_de_habitacion">
+                        <img src="images/Habitaciones(5).jpg" alt="tipo_de_habitacion">
+                        <img src="images/Habitaciones(6).jpg" alt="tipo_de_habitacion">
+                        <img src="images/Habitaciones(7).jpg" alt="tipo_de_habitacion">
+                        <img src="images/Habitaciones(9).jpg" alt="tipo_de_habitacion">
+                                        
+                    </div-->
+
+                    <!--FALTA-->
+                    <!--boton de cotizar -->
+
+            </article>
+                    
+        <br>
+
+        
+        <br>
+        <aside id="reservas"></aside>
+        <!--formulario, no lo tengo en el wireframe, preguntar si puede ir dentro de un aside-->
+            <form action="procesar-info.php" method="post">
+                <!--<label for="">Nombre y apellido</label>-->
+                <input type="text" name="nombre" placeholder="Nombre y Apellido">
+                <input type="email" name="nombre" placeholder="E-mail" required>
+                <label for="date">Check-in</label>
+                <input type="date" name="check-in">
+                <label for="date">Check-out</label>
+                <input type="date" name="check-out">
+                <select name="habitacion">
+                    <option value="standard-room">Standard Room</option>
+                    <option value="superior-room" selected>Superior Room</option>
+                </select>
+                <input type="submit" value="Reservar">
+            </form>
+        <br>
+
+        <aside id="ubicacion"></aside>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d6700.768281932868!2d-68.84414141543898!3d-32.88801041137068!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses-419!2sar!4v1584833114664!5m2!1ses-419!2sar" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+         <br>
+        <!--seccion gastronomia-->  
+        <section id="gastronomia"></section>
+
+            <h2>Gastronomia</h2>
+            <a href="#">volver al Menu</a>
+            <br>
+            <br>
+        <article>
+            
+                <div><img src="images/gastronomia(1).jpg" width="400" alt="imagen_vinos"></div>
+                <div><img src="images/gastronomia(2).jpg" width="400" alt="imagen_desayuno"></div>
+
+                <p class="parrafo-distinto">Un hotel ideal tanto para unas anheladas vacaciones como para viajes de negocios. En el corazón del circuito gastronómico por excelencia de Mendoza tan bien ubicado que todo queda cerca.
+                Desayuno continental: donde podrán disfrutar de todo tipo de infusiones (té, café, leche, chocolate) yogurth, cereales, frutos secos repostería casera al igual que los dulces, como así también podrán encontrarse con ensalada de frutas frescas, queso y jamón. 
+                Cava de vinos.</p>
+
+        </article>   
+
+            <br>
+
+
+        <!--seccion promociones--> 
+        <section id="promociones"></section>
+        
+            <h2>Promociones</h2>
+            <a href="#">volver al Menu</a>
+            
+                <p class="destacado">¡No te pierdas las promociones exclusivas para Otoño! Quédate tres noches y pagas dos. Vení a disfrutar de Mendoza. Envíanos tu consulta a reservas@varda.com</p>
+       
+    </main> 
+
+    <footer>
+        <!--aside o div contactos--> 
+        <aside id="contactos"></aside>
+
+            <h2>Contactos</h2> 
+            <a href="#">volver al Menu</a>   
+            
+                <ul>
+                    <li>Teléfono. +54 261 444-5665</li>
+                    <li>Email: info@varda.com</li>
+                    <li>Av. Perú 1238, 5500 Mendoza, Argentina</li>
+                    
+                </ul>
+
+        
+<!-- para la informacion de contacto: facebook, etc. -->
+    
+        <img src="images/REDES.png" width="100" alt="redes sociales">
+
+    </footer>
+        
+</body>
+</html>
